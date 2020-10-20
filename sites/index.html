@@ -84,7 +84,6 @@
         <!-- Masthead Avatar Image-->
         <img
           class="masthead-avatar mb-5"
-          style="width: 31%;"
           src="assets/img/avataaars.svg"
           alt="mx-medical-logo"
         />
@@ -117,11 +116,22 @@
           <div class="divider-custom-icon"><i class="fas fa-sort-down"></i></div>
           <div class="divider-custom-line"></div>
         </div>
+        
+        <div id="myBtnContainer" style="text-align: center;">
+          <button style="border: 1px solid grey;" class="btn" onclick="filterSelection('all')"> Hepsi</button>
+          <button style="border: 1px solid grey;" class="btn" onclick="filterSelection('penset')"> Pensetler</button>
+          <button style="border: 1px solid grey;" class="btn" onclick="filterSelection('cerrahi')"> Cerrahi El Aletleri</button>
+          <button style="border: 1px solid grey;" class="btn" onclick="filterSelection('dhi')"> Dhi Kalem</button>
+          <button style="border: 1px solid grey;" class="btn" onclick="filterSelection('prp')"> Prp</button>
+          <button style="border: 1px solid grey;" class="btn" onclick="filterSelection('sarf')"> Sarf Malzemeler</button>
+          <button style="border: 1px solid grey;" class="btn" onclick="filterSelection('dermojet')"> Dermojet</button>
+        </div>
+
+        <br><br>
         <!-- Portfolio Grid Items-->
-        <div class="row">
-          
+        <div class="row">    
           <!-- Portfolio Item 1-->
-          <div class="col-md-6 col-lg-4 mb-5">
+          <div class="col-md-6 col-lg-4 mb-5 filterDiv penset">
             <div
               class="portfolio-item mx-auto"
               data-toggle="modal"
@@ -140,12 +150,13 @@
                 class="img-fluid"
                 src="assets/img/products/DüzEkimPenset.jpeg"
                 alt="duz-ekim-penset"
-              />
+              />     
             </div>
+            <h5 style="text-align: center; margin-top: 4%;">Düz Ekim Penset</h5>
           </div>
 
           <!-- Portfolio Item 2-->
-          <div class="col-md-6 col-lg-4 mb-5">
+          <div class="col-md-6 col-lg-4 mb-5 filterDiv cerrahi">
             <div
               class="portfolio-item mx-auto"
               data-toggle="modal"
@@ -166,9 +177,10 @@
                 alt="cerrahi-makas"
               />
             </div>
+            <h5 style="text-align: center; margin-top: 4%;">Cerrahi Makas</h5>
           </div>
           <!-- Portfolio Item 3-->
-          <div class="col-md-6 col-lg-4 mb-5">
+          <div class="col-md-6 col-lg-4 mb-5 filterDiv cerrahi">
             <div
               class="portfolio-item mx-auto"
               data-toggle="modal"
@@ -189,9 +201,10 @@
                 alt="elmas-uc-portegu"
               />
             </div>
+            <h5 style="text-align: center; margin-top: 4%;">Elmas Uç Portegü</h5>
           </div>
           <!-- Portfolio Item 4-->
-          <div class="col-md-6 col-lg-4 mb-5 mb-lg-0">
+          <div class="col-md-6 col-lg-4 mb-5 filterDiv animals">
             <div
               class="portfolio-item mx-auto"
               data-toggle="modal"
@@ -212,9 +225,10 @@
                 alt="celik-konteyner"
               />
             </div>
+            <h5 style="text-align: center; margin-top: 4%;">Çelik Konteyner</h5>
           </div>
           <!-- Portfolio Item 9-->
-          <div class="col-md-6 col-lg-4 mb-5">
+          <div class="col-md-6 col-lg-4 mb-5 filterDiv dermojet">
             <div
               class="portfolio-item mx-auto"
               data-toggle="modal"
@@ -235,9 +249,10 @@
                 alt="dermojet"
               />
             </div>
+            <h5 style="text-align: center; margin-top: 4%;">Dermojet</h5>
           </div>
           <!-- Portfolio Item 6-->
-          <div class="col-md-6 col-lg-4">
+          <div class="col-md-6 col-lg-4 mb-5 filterDiv penset">
             <div
               class="portfolio-item mx-auto"
               data-toggle="modal"
@@ -258,82 +273,83 @@
                 alt="delikli-penset"
               />
             </div>
+            <h5 style="text-align: center; margin-top: 4%;">Delikli Penset</h5>
           </div>
-        </div>
-        <br /><br />
-        <!-- İkinci eklenen ürünler -->
-        <div class="row">
-          <!-- Portfolio Item 7-->
-          <div class="col-md-6 col-lg-4 mb-5">
-            <div
-              class="portfolio-item mx-auto"
-              data-toggle="modal"
-              data-target="#portfolioModal7"
-            >
+
+            <!-- Portfolio Item 7-->
+            <div class="col-md-6 col-lg-4 mb-5 filterDiv penset">
               <div
-                class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100"
+                class="portfolio-item mx-auto"
+                data-toggle="modal"
+                data-target="#portfolioModal7"
               >
                 <div
-                  class="portfolio-item-caption-content text-center text-white"
+                  class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100"
                 >
-                  <i class="fas fa-plus fa-3x"></i>
+                  <div
+                    class="portfolio-item-caption-content text-center text-white"
+                  >
+                    <i class="fas fa-plus fa-3x"></i>
+                  </div>
                 </div>
+                <img
+                  class="img-fluid"
+                  src="assets/img/products/ToplamaPenset.jpeg"
+                  alt="toplama-penset"
+                />
               </div>
-              <img
-                class="img-fluid"
-                src="assets/img/products/ToplamaPenset.jpeg"
-                alt="toplama-penset"
-              />
+            <h5 style="text-align: center; margin-top: 4%;">Toplama Penset</h5>
             </div>
-          </div>
-          <!-- Portfolio Item 8-->
-          <div class="col-md-6 col-lg-4 mb-5">
-            <div
-              class="portfolio-item mx-auto"
-              data-toggle="modal"
-              data-target="#portfolioModal8"
-            >
+            <!-- Portfolio Item 8-->
+            <div class="col-md-6 col-lg-4 mb-5 filterDiv animals">
               <div
-                class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100"
+                class="portfolio-item mx-auto"
+                data-toggle="modal"
+                data-target="#portfolioModal8"
               >
                 <div
-                  class="portfolio-item-caption-content text-center text-white"
+                  class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100"
                 >
-                  <i class="fas fa-plus fa-3x"></i>
+                  <div
+                    class="portfolio-item-caption-content text-center text-white"
+                  >
+                    <i class="fas fa-plus fa-3x"></i>
+                  </div>
                 </div>
+                <img
+                  class="img-fluid"
+                  src="assets/img/products/HandleGumus.jpeg"
+                  alt="handle-gumus"
+                />
               </div>
-              <img
-                class="img-fluid"
-                src="assets/img/products/HandleGumus.jpeg"
-                alt="handle-gumus"
-              />
+            <h5 style="text-align: center; margin-top: 4%;">Handle (Gümüş)</h5>
             </div>
-          </div>
-          <!-- Portfolio Item 5-->
-          <div class="col-md-6 col-lg-4 mb-5 mb-md-0">
-            <div
-              class="portfolio-item mx-auto"
-              data-toggle="modal"
-              data-target="#portfolioModal5"
-            >
+            <!-- Portfolio Item 5-->
+            <div class="col-md-6 col-lg-4 mb-5 filterDiv penset">
               <div
-                class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100"
+                class="portfolio-item mx-auto"
+                data-toggle="modal"
+                data-target="#portfolioModal5"
               >
                 <div
-                  class="portfolio-item-caption-content text-center text-white"
+                  class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100"
                 >
-                  <i class="fas fa-plus fa-3x"></i>
+                  <div
+                    class="portfolio-item-caption-content text-center text-white"
+                  >
+                    <i class="fas fa-plus fa-3x"></i>
+                  </div>
                 </div>
+                <img
+                  class="img-fluid"
+                  src="assets/img/products/BilekliEkimPenset.jpeg"
+                  alt="bilekli-ekim-penset"
+                />
               </div>
-              <img
-                class="img-fluid"
-                src="assets/img/products/BilekliEkimPenset.jpeg"
-                alt="bilekli-ekim-penset"
-              />
+            <h5 style="text-align: center; margin-top: 4%;">Bilekli Ekim Penset</h5>
             </div>
-          </div>
-          <!-- yeni eklenecekler buraya -->
-        </div>
+            <!-- yeni eklenecekler buraya -->
+        </div>        
       </div>
     </section>
     <!-- About Section-->

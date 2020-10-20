@@ -46,7 +46,7 @@
 	width:60px;
 	height:60px;
 	bottom:25px;
-	left:40px;
+	left:30px;
 	background-color:#25d366;
 	color:#FFF;
 	border-radius:50px;
@@ -65,6 +65,39 @@
 *::after {
   box-sizing: border-box;
 }
+
+.filterDiv {
+  display: none;
+}
+
+.show {
+  display: block;
+}
+
+ @media (max-width: 407px) {
+  #myBtnContainer {
+    line-height: 45px;
+  }
+} 
+
+/* .container {
+  overflow: hidden;
+} */
+
+/* Style the buttons */
+.btn {
+  border: 1px solid grey;
+  outline: none;
+  padding: 12px 16px;
+  /* width: 9%; */
+  background-color: #f1f1f1;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #ddd;
+}
+
 
 html {
   font-family: sans-serif;
@@ -10162,7 +10195,13 @@ h3 {
   font-size: 1.25rem;
 }
 .masthead .masthead-avatar {
-  width: 15rem;
+  width: 31%;
+}
+
+@media (max-width: 768px) {
+  .masthead .masthead-avatar {
+    width: 60%;
+  }
 }
 
 @media (min-width: 992px) {
