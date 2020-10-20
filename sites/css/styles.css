@@ -41,6 +41,25 @@
   --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
 }
 
+.float{
+	position:fixed;
+	width:60px;
+	height:60px;
+	bottom:25px;
+	left:40px;
+	background-color:#25d366;
+	color:#FFF;
+	border-radius:50px;
+	text-align:center;
+  font-size:30px;
+	box-shadow: 1px 3px 4px #999;
+  z-index:100;
+}
+
+.my-float{
+	margin-top:16px;
+}
+
 *,
 *::before,
 *::after {
