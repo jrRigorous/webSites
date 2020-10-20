@@ -218,39 +218,38 @@
                 <div class="row">
                     <div class="col-lg-8 mx-auto">
                         <!-- To configure the contact form email address, go to mail/contact_me.php and update the email address in the PHP file on line 19.-->
-                        <form class="contact-form" action="contactform.php" method="POST">
+                        <form id="contactForm" name="sentMessage" novalidate="novalidate">
                             <div class="control-group">
                                 <div class="form-group floating-label-form-group controls mb-0 pb-2">
                                     <label>İsim</label>
-                                    <input class="form-control" name="name" type="text" placeholder="İsim" required="required"  />
+                                    <input class="form-control" id="name" type="text" placeholder="İsim" required="required" data-validation-required-message="Lütfen isminizi giriniz!" />
                                     <p class="help-block text-danger"></p>
                                 </div>
                             </div>
                             <div class="control-group">
                                 <div class="form-group floating-label-form-group controls mb-0 pb-2">
                                     <label>Email Adresi</label>
-                                    <input class="form-control" name="mail" type="email" placeholder="Email Adresi" required="required" />
+                                    <input class="form-control" id="email" type="email" placeholder="Email Adresi" required="required" data-validation-required-message="Lütfen e-mail adresinizi giriniz!" />
                                     <p class="help-block text-danger"></p>
                                 </div>
                             </div>
-                            <!-- <div class="control-group">
+                            <div class="control-group">
                                 <div class="form-group floating-label-form-group controls mb-0 pb-2">
                                     <label>Phone Number</label>
                                     <input class="form-control" id="phone" type="tel" placeholder="Phone Number" required="required" data-validation-required-message="Please enter your phone number." />
                                     <p class="help-block text-danger"></p>
                                 </div>
-                            </div> -->
+                            </div>
                             <div class="control-group">
                                 <div class="form-group floating-label-form-group controls mb-0 pb-2">
                                     <label>Mesaj</label>
-                                    <textarea class="form-control" name="message" rows="5" placeholder="Mesajınız" required="required"></textarea>
+                                    <textarea class="form-control" id="message" rows="5" placeholder="Mesajınız" required="required" data-validation-required-message="Lütfen mesajınızı giriniz!"></textarea>
                                     <p class="help-block text-danger"></p>
                                 </div>
                             </div>
-
                             <br />
                             <div id="success"></div>
-                            <div class="form-group"><button class="btn btn-primary btn-xl" name="submit" type="submit">Gönder</button></div>
+                            <div class="form-group"><button class="btn btn-primary btn-xl" id="sendMessageButton" type="submit">Gönder</button></div>
                         </form>
                     </div>
                 </div>
