@@ -74,7 +74,7 @@
   display: block;
 }
 
- @media (max-width: 407px) {
+ @media (max-width: 1200px) {
   #myBtnContainer {
     line-height: 45px;
   }
