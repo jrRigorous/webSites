@@ -10250,6 +10250,11 @@ h3 {
     line-height: 2.5rem;
   }
 }
+@media (max-width: 488px) {
+  .portfolio-modal .portfolio-modal-title {
+    line-height: 3rem;
+  }
+}
 .portfolio-modal .close {
   position: absolute;
   z-index: 1;
