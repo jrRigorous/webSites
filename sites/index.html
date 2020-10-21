@@ -70,7 +70,7 @@
             <li class="nav-item mx-0 mx-lg-1">
               <a
                 class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger"
-                href="#portfolio-2"
+                href="#document"
                 >Belgelerimiz</a
               >
             </li>
@@ -92,7 +92,9 @@
         <!-- Icon Divider-->
         <div class="divider-custom divider-light">
           <div class="divider-custom-line"></div>
-          <div class="divider-custom-icon"><i class="fas fa-sort-down"></i></div>
+          <div class="divider-custom-icon">
+            <i class="fas fa-sort-down"></i>
+          </div>
           <div class="divider-custom-line"></div>
         </div>
         <!-- Masthead Subheading-->
@@ -113,23 +115,90 @@
         <!-- Icon Divider-->
         <div class="divider-custom">
           <div class="divider-custom-line"></div>
-          <div class="divider-custom-icon"><i class="fas fa-sort-down"></i></div>
+          <div class="divider-custom-icon">
+            <i class="fas fa-sort-down"></i>
+          </div>
           <div class="divider-custom-line"></div>
         </div>
-        
-        <div id="myBtnContainer" style="text-align: center;">
-          <button style="border: 1px solid grey;" class="btn" onclick="filterSelection('all')"> Hepsi</button>
-          <button style="border: 1px solid grey;" class="btn" onclick="filterSelection('penset')"> Pensetler</button>
-          <button style="border: 1px solid grey;" class="btn" onclick="filterSelection('cerrahi')"> Cerrahi El Aletleri</button>
-          <button style="border: 1px solid grey;" class="btn" onclick="filterSelection('dhi')"> Dhi Kalem</button>
-          <button style="border: 1px solid grey;" class="btn" onclick="filterSelection('prp')"> Prp</button>
-          <button style="border: 1px solid grey;" class="btn" onclick="filterSelection('sarf')"> Sarf Malzemeler</button>
-          <button style="border: 1px solid grey;" class="btn" onclick="filterSelection('dermojet')"> Dermojet</button>
+
+        <div id="myBtnContainer" style="text-align: center">
+          <button
+            style="border: 1px solid grey"
+            class="btn"
+            onclick="filterSelection('all')"
+          >
+            Hepsi
+          </button>
+          <button
+            style="border: 1px solid grey"
+            class="btn"
+            onclick="filterSelection('penset')"
+          >
+            Pensetler
+          </button>
+          <button
+            style="border: 1px solid grey"
+            class="btn"
+            onclick="filterSelection('cerrahi')"
+          >
+            Cerrahi El Aletleri
+          </button>
+          <button
+            style="border: 1px solid grey"
+            class="btn"
+            onclick="filterSelection('dermojet')"
+          >
+            Dermojet
+          </button>
+          <button
+            style="border: 1px solid grey"
+            class="btn"
+            onclick="filterSelection('celikKonteyner')"
+          >
+            Çelik Konteyner
+          </button>
+          <button
+            style="border: 1px solid grey"
+            class="btn"
+            onclick="filterSelection('celikUc')"
+          >
+            Çelik Uç
+          </button>
+          <button
+            style="border: 1px solid grey"
+            class="btn"
+            onclick="filterSelection('dhi')"
+          >
+            DHI Kalem
+          </button>
+          <button
+            style="border: 1px solid grey"
+            class="btn"
+            onclick="filterSelection('handle')"
+          >
+            Handle
+          </button>
+          <button
+            style="border: 1px solid grey"
+            class="btn"
+            onclick="filterSelection('sayac')"
+          >
+            Sayaç
+          </button>
+          <button
+            style="border: 1px solid grey"
+            class="btn"
+            onclick="filterSelection('sogutucuBuharCihazı')"
+          >
+            Soğutucu Buhar Cihazı
+          </button>
         </div>
 
-        <br><br>
+        <br /><br />
         <!-- Portfolio Grid Items-->
-        <div class="row">    
+        <div class="row">
+
+          <!-- PENSETLER Başlangıç -->
           <!-- Portfolio Item 1-->
           <div class="col-md-6 col-lg-4 mb-5 filterDiv penset">
             <div
@@ -149,14 +218,16 @@
               </div>
               <img
                 class="img-fluid"
-                src="assets/img/products/DüzEkimPenset.jpeg"
+                src="assets/img/products/pensetler/bilekli-ekim-penset.jpeg"
                 alt="duz-ekim-penset"
-              />     
+              />
             </div>
-            <h5 style="text-align: center; margin-top: 4%;">Düz Ekim Penset</h5>
+            <h5 style="text-align: center; margin-top: 4%">
+              BİLEKLİ EKİM PENSET
+            </h5>
           </div>
           <!-- Portfolio Item 2-->
-          <div class="col-md-6 col-lg-4 mb-5 filterDiv cerrahi">
+          <div class="col-md-6 col-lg-4 mb-5 filterDiv penset">
             <div
               class="portfolio-item mx-auto"
               data-toggle="modal"
@@ -174,14 +245,14 @@
               </div>
               <img
                 class="img-fluid"
-                src="assets/img/products/CerrahiMakas.jpeg"
-                alt="cerrahi-makas"
+                src="assets/img/products/pensetler/toplama-penset.jpeg"
+                alt="toplama-penset"
               />
             </div>
-            <h5 style="text-align: center; margin-top: 4%;">Cerrahi Makas</h5>
+            <h5 style="text-align: center; margin-top: 4%">Toplama Penset</h5>
           </div>
           <!-- Portfolio Item 3-->
-          <div class="col-md-6 col-lg-4 mb-5 filterDiv cerrahi">
+          <div class="col-md-6 col-lg-4 mb-5 filterDiv penset">
             <div
               class="portfolio-item mx-auto"
               data-toggle="modal"
@@ -199,14 +270,14 @@
               </div>
               <img
                 class="img-fluid"
-                src="assets/img/products/ElmasUcPortegu.jpeg"
-                alt="elmas-uc-portegu"
+                src="assets/img/products/pensetler/ekim-penset.jpeg"
+                alt="ekim-penset"
               />
             </div>
-            <h5 style="text-align: center; margin-top: 4%;">Elmas Uç Portegü</h5>
+            <h5 style="text-align: center; margin-top: 4%">Ekim Penset</h5>
           </div>
           <!-- Portfolio Item 4-->
-          <div class="col-md-6 col-lg-4 mb-5 filterDiv animals">
+          <div class="col-md-6 col-lg-4 mb-5 filterDiv penset">
             <div
               class="portfolio-item mx-auto"
               data-toggle="modal"
@@ -224,18 +295,21 @@
               </div>
               <img
                 class="img-fluid"
-                src="assets/img/products/CelikKonteyner.jpeg"
-                alt="celik-konteyner"
+                src="assets/img/products/pensetler/delikli-penset.jpeg"
+                alt="delikli-penset"
               />
             </div>
-            <h5 style="text-align: center; margin-top: 4%;">Çelik Konteyner</h5>
+            <h5 style="text-align: center; margin-top: 4%">Delikli Penset</h5>
           </div>
-          <!-- Portfolio Item 9-->
-          <div class="col-md-6 col-lg-4 mb-5 filterDiv dermojet">
+          <!-- PENSETLER Bitiş -->
+
+          <!-- CERRAHİ EL ALETLERİ Başlangıç -->
+          <!-- Portfolio Item 5-->
+          <div class="col-md-6 col-lg-4 mb-5 filterDiv cerrahi">
             <div
               class="portfolio-item mx-auto"
               data-toggle="modal"
-              data-target="#portfolioModal9"
+              data-target="#portfolioModal5"
               title="Detay Gör"
             >
               <div
@@ -249,14 +323,14 @@
               </div>
               <img
                 class="img-fluid"
-                src="assets/img/products/Dermojet.jpeg"
-                alt="dermojet"
+                src="assets/img/products/cerrahi-el-aletleri/elmas-uc-portegu.jpeg"
+                alt="elmas-uc-portegu"
               />
             </div>
-            <h5 style="text-align: center; margin-top: 4%;">Dermojet</h5>
+            <h5 style="text-align: center; margin-top: 4%">ELMAS UÇ PORTEGÜ</h5>
           </div>
           <!-- Portfolio Item 6-->
-          <div class="col-md-6 col-lg-4 mb-5 filterDiv penset">
+          <div class="col-md-6 col-lg-4 mb-5 filterDiv cerrahi">
             <div
               class="portfolio-item mx-auto"
               data-toggle="modal"
@@ -274,89 +348,102 @@
               </div>
               <img
                 class="img-fluid"
-                src="assets/img/products/DelikliPenset.jpeg"
-                alt="delikli-penset"
+                src="assets/img/products/cerrahi-el-aletleri/cerrahi-makas.jpeg"
+                alt="cerrahi-makas"
               />
             </div>
-            <h5 style="text-align: center; margin-top: 4%;">Delikli Penset</h5>
+            <h5 style="text-align: center; margin-top: 4%">Cerrahi Makas</h5>
           </div>
-            <!-- Portfolio Item 7-->
-            <div class="col-md-6 col-lg-4 mb-5 filterDiv penset">
+          <!-- CERRAHİ EL ALETLERİ Bitiş -->
+
+          <!-- DERMOJET Başlangıç -->
+          <!-- Portfolio Item 7-->
+          <div class="col-md-6 col-lg-4 mb-5 filterDiv dermojet">
+            <div
+              class="portfolio-item mx-auto"
+              data-toggle="modal"
+              data-target="#portfolioModal7"
+              title="Detay Gör"
+            >
               <div
-                class="portfolio-item mx-auto"
-                data-toggle="modal"
-                data-target="#portfolioModal7"
-                title="Detay Gör"
+                class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100"
               >
                 <div
-                  class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100"
+                  class="portfolio-item-caption-content text-center text-white"
                 >
-                  <div
-                    class="portfolio-item-caption-content text-center text-white"
-                  >
-                    <i class="fas fa-plus fa-3x"></i>
-                  </div>
+                  <i class="fas fa-plus fa-3x"></i>
                 </div>
-                <img
-                  class="img-fluid"
-                  src="assets/img/products/ToplamaPenset.jpeg"
-                  alt="toplama-penset"
-                />
               </div>
-            <h5 style="text-align: center; margin-top: 4%;">Toplama Penset</h5>
+              <img
+                class="img-fluid"
+                src="assets/img/products/dermojet/dermojet.jpeg"
+                alt="dermojet"
+              />
             </div>
-            <!-- Portfolio Item 8-->
-            <div class="col-md-6 col-lg-4 mb-5 filterDiv animals">
+            <h5 style="text-align: center; margin-top: 4%">
+              DERMOJET (İĞNESİZ ANESTEZİ CİHAZI)
+            </h5>
+          </div>
+          <!-- DERMOJET Bitiş -->
+
+          <!-- ÇELİK KONTEYNER Başlangıç -->
+          <!-- Portfolio Item 8-->
+          <div class="col-md-6 col-lg-4 mb-5 filterDiv celikKonteyner">
+            <div
+              class="portfolio-item mx-auto"
+              data-toggle="modal"
+              data-target="#portfolioModal8"
+              title="Detay Gör"
+            >
               <div
-                class="portfolio-item mx-auto"
-                data-toggle="modal"
-                data-target="#portfolioModal8"
-                title="Detay Gör"
+                class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100"
               >
                 <div
-                  class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100"
+                  class="portfolio-item-caption-content text-center text-white"
                 >
-                  <div
-                    class="portfolio-item-caption-content text-center text-white"
-                  >
-                    <i class="fas fa-plus fa-3x"></i>
-                  </div>
+                  <i class="fas fa-plus fa-3x"></i>
                 </div>
-                <img
-                  class="img-fluid"
-                  src="assets/img/products/HandleGumus.jpeg"
-                  alt="handle-gumus"
-                />
               </div>
-            <h5 style="text-align: center; margin-top: 4%;">Handle (Gümüş)</h5>
+              <img
+                class="img-fluid"
+                src="assets/img/products/celik-konteyner/celik-konteyner.jpeg"
+                alt="celik-konteyner"
+              />
             </div>
-            <!-- Portfolio Item 5-->
-            <div class="col-md-6 col-lg-4 mb-5 filterDiv penset">
+            <h5 style="text-align: center; margin-top: 4%">ÇELİK KONTEYNER</h5>
+          </div>
+          <!-- ÇELİK KONTEYNER Bitiş -->
+
+          <!-- HANDLE Başlangıç -->
+          <!-- Portfolio Item 9-->
+          <div class="col-md-6 col-lg-4 mb-5 filterDiv handle">
+            <div
+              class="portfolio-item mx-auto"
+              data-toggle="modal"
+              data-target="#portfolioModal9"
+              title="Detay Gör"
+            >
               <div
-                class="portfolio-item mx-auto"
-                data-toggle="modal"
-                data-target="#portfolioModal5"
-                title="Detay Gör"
+                class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100"
               >
                 <div
-                  class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100"
+                  class="portfolio-item-caption-content text-center text-white"
                 >
-                  <div
-                    class="portfolio-item-caption-content text-center text-white"
-                  >
-                    <i class="fas fa-plus fa-3x"></i>
-                  </div>
+                  <i class="fas fa-plus fa-3x"></i>
                 </div>
-                <img
-                  class="img-fluid"
-                  src="assets/img/products/BilekliEkimPenset.jpeg"
-                  alt="bilekli-ekim-penset"
-                />
               </div>
-            <h5 style="text-align: center; margin-top: 4%;">Bilekli Ekim Penset</h5>
+              <img
+                class="img-fluid"
+                src="assets/img/products/handle/handle.jpeg"
+                alt="handle"
+              />
             </div>
-            <!-- yeni eklenecekler buraya -->
-        </div>        
+            <h5 style="text-align: center; margin-top: 4%">HANDLE (GÜMÜŞ)</h5>
+          </div>
+          <!-- HANDLE Bitiş -->
+
+          <!-- yeni eklenecekler buraya -->
+        </div>
       </div>
     </section>
 
@@ -370,7 +457,9 @@
         <!-- Icon Divider-->
         <div class="divider-custom divider-light">
           <div class="divider-custom-line"></div>
-          <div class="divider-custom-icon"><i class="fas fa-sort-down"></i></div>
+          <div class="divider-custom-icon">
+            <i class="fas fa-sort-down"></i>
+          </div>
           <div class="divider-custom-line"></div>
         </div>
         <!-- About Section Content-->
@@ -394,10 +483,10 @@
       </div>
     </section>
 
-    <!-- Contact Section-->
-    <section class="page-section portfolio" id="portfolio-2">
+    <!-- Document Section-->
+    <section class="page-section portfolio" id="document">
       <div class="container">
-        <!-- Contact Section Heading-->
+        <!-- Document Section Heading-->
         <h2
           class="page-section-heading text-center text-uppercase text-secondary mb-0"
         >
@@ -406,11 +495,14 @@
         <!-- Icon Divider-->
         <div class="divider-custom">
           <div class="divider-custom-line"></div>
-          <div class="divider-custom-icon"><i class="fas fa-sort-down"></i></div>
+          <div class="divider-custom-icon">
+            <i class="fas fa-sort-down"></i>
+          </div>
           <div class="divider-custom-line"></div>
         </div>
         <div class="row">
-          <!-- Portfolio Item 1-->
+          
+          <!-- Document Item 1-->
           <div class="col-md-6 col-lg-4 mb-5">
             <div
               class="portfolio-item mx-auto"
@@ -446,33 +538,32 @@
           <div class="col-lg-4 mb-5 mb-lg-0">
             <h4 class="text-uppercase mb-4">Konumumuz</h4>
             <p class="lead mb-0">
-              Cemil Yılmaz Cemil Yılmaz
+              Çalışlar Caddesi İzzettin Caddesi <br />
+              No : 5 D : 3
               <br />
-              Cemil Yılmaz
+              Bahçelievler / İstanbul
             </p>
           </div>
           <!-- Footer Social Icons-->
           <div class="col-lg-4 mb-5 mb-lg-0">
             <h4 class="text-uppercase mb-4">Sosyal Medya</h4>
-            <a class="btn btn-outline-light btn-social mx-1" href="#!"
-              ><i class="fab fa-fw fa-facebook-f"></i
-            ></a>
-            <a class="btn btn-outline-light btn-social mx-1" href="#!"
-              ><i class="fab fa-fw fa-twitter"></i
-            ></a>
-            <a class="btn btn-outline-light btn-social mx-1" href="#!"
-              ><i class="fab fa-fw fa-linkedin-in"></i
-            ></a>
-            <a class="btn btn-outline-light btn-social mx-1" href="#!"
-              ><i class="fab fa-fw fa-dribbble"></i
+            <a
+              class="btn btn-outline-light btn-social mx-1"
+              href="http://instagram.com/anatomisaglik"
+              target="_blank"
+              ><i class="fab fa-instagram"></i
             ></a>
           </div>
-          
+
           <!-- Footer About Text-->
           <div class="col-lg-4">
-            <h4 class="text-uppercase mb-4">Cemil Yılmaz</h4>
+            <h4 class="text-uppercase mb-4">BİZE ULAŞIN</h4>
             <p class="lead mb-0">
-              Cemil YılmazCemil Yılmaz Cemil YılmazCemil Yılmaz
+              <i class="fas fa-phone-square-alt"></i> &nbsp; &nbsp; +90 541 220
+              80 68 <br />
+              <br />
+              <i class="fas fa-phone-square-alt"></i> &nbsp; &nbsp; +90 539 455
+              15 10
             </p>
           </div>
         </div>
@@ -480,7 +571,11 @@
     </footer>
     <!-- Copyright Section-->
     <div class="copyright py-4 text-center text-white">
-      <div class="container"><small style="color: grey;">© 2020 - Designed By :  A. Furkan Titiz</small></div>
+      <div class="container">
+        <small style="color: grey"
+          >© 2020 - Designed By : A. Furkan Titiz</small
+        >
+      </div>
     </div>
     <!-- Scroll to Top Button (Only visible on small and extra-small screen sizes)-->
     <div class="scroll-to-top d-lg-none position-fixed">
@@ -491,8 +586,9 @@
       ></a>
     </div>
 
-                                                 <!-- Portfolio Modals-->
+                      <!-- Portfolio Modals-->
 
+    <!-- PENSETLER Başlangıç -->
     <!-- Portfolio Modal 1-->
     <div
       class="portfolio-modal modal fade"
@@ -521,27 +617,29 @@
                     class="portfolio-modal-title text-secondary text-uppercase mb-0"
                     id="portfolioModal1Label"
                   >
-                    Düz Ekim Penset
+                    BİLEKLİ EKİM PENSET
                   </h2>
                   <!-- Icon Divider-->
                   <div class="divider-custom">
                     <div class="divider-custom-line"></div>
-                    <div class="divider-custom-icon"><i class="fas fa-sort-down"></i></div>
+                    <div class="divider-custom-icon">
+                      <i class="fas fa-sort-down"></i>
+                    </div>
                     <div class="divider-custom-line"></div>
                   </div>
                   <!-- Portfolio Modal - Image-->
                   <img
                     class="img-fluid rounded mb-5"
-                    src="assets/img/products/DüzEkimPenset.jpeg"
-                    alt="duz-ekim-penset"
+                    src="assets/img/products/pensetler/bilekli-ekim-penset.jpeg"
+                    alt="bilekli-ekim-penset"
                   />
                   <!-- Portfolio Modal - Text-->
                   <p class="mb-5">
-                    ÜRETİM YERİ : TÜRKİYE <br>
-                    TÜM PENSETLERİMİZ A SINIFI TIBBİ PASLANMAZ ÇELİKTEN ÜRETİLMİŞTİR. <br>
-                    OLABİLDİĞİNCE İNCE UÇLU FAKAT İĞNE UÇLU DEĞİLDİR. <br>
-                    KESKİN VE YUVARLAK KENARLI UÇLAR. <br>
-                    KİŞİYE ÖZEL İSİM YAZDIRMA. <br>
+                    BİLEKLİKLER ALİMİNYUM VE CERRAHİ TEL İP OLARAK 2 MODELE
+                    AYRILIR <br />
+                    BİLEKLİKLERİN 6 AYLIK GARANTİSİ YAZILI BİR ŞEKİLDE BEYAAN
+                    EDİLİR <br />
+                    UZUN,KISA,SERT VE HAFİF MODELLERİ MEVCUTTUR
                   </p>
                   <button class="btn btn-primary" data-dismiss="modal">
                     <i class="fas fa-times fa-fw"></i>
@@ -582,23 +680,30 @@
                     class="portfolio-modal-title text-secondary text-uppercase mb-0"
                     id="portfolioModal2Label"
                   >
-                    Cerrahi Makas
+                    Toplama Penset
                   </h2>
                   <!-- Icon Divider-->
                   <div class="divider-custom">
                     <div class="divider-custom-line"></div>
-                    <div class="divider-custom-icon"><i class="fas fa-sort-down"></i></div>
+                    <div class="divider-custom-icon">
+                      <i class="fas fa-sort-down"></i>
+                    </div>
                     <div class="divider-custom-line"></div>
                   </div>
                   <!-- Portfolio Modal - Image-->
                   <img
                     class="img-fluid rounded mb-5"
-                    src="assets/img/products/CerrahiMakas.jpeg"
-                    alt="cerrahi-makas"
+                    src="assets/img/products/pensetler/toplama-penset.jpeg"
+                    alt="toplama-penset"
                   />
                   <!-- Portfolio Modal - Text-->
                   <p class="mb-5">
-                    ÜRETİM YERİ : GERMANY
+                    ÜRETİM YERİ TÜRKİYE <br />
+                    NORMAL GÖVDE VE GENİŞ GÖVDELİ 2 MODELİMİZ BULUNUR <br />
+                    EXTRA OLARAK BİLEKLİK TAKILMAYA UYUMLU <br />
+                    PENSETLERİN UCUNDAKİ ÖZEL ÇİZGİLER İLE EN İYİ GREFT TUTMA
+                    KOLAYLIĞINI SAĞLIYOR <br />
+                    KIRILMAZ ÇELİKTEN İMAL EDİLMİŞTİR
                   </p>
                   <button class="btn btn-primary" data-dismiss="modal">
                     <i class="fas fa-times fa-fw"></i>
@@ -639,25 +744,30 @@
                     class="portfolio-modal-title text-secondary text-uppercase mb-0"
                     id="portfolioModal3Label"
                   >
-                    Elmas Uç Portegü
+                    Ekim Penset
                   </h2>
                   <!-- Icon Divider-->
                   <div class="divider-custom">
                     <div class="divider-custom-line"></div>
-                    <div class="divider-custom-icon"><i class="fas fa-sort-down"></i></div>
+                    <div class="divider-custom-icon">
+                      <i class="fas fa-sort-down"></i>
+                    </div>
                     <div class="divider-custom-line"></div>
                   </div>
                   <!-- Portfolio Modal - Image-->
                   <img
                     class="img-fluid rounded mb-5"
-                    src="assets/img/products/ElmasUcPortegu.jpeg"
-                    alt="elmas-uc-portegu"
+                    src="assets/img/products/pensetler/ekim-penset.jpeg"
+                    alt="ekim-penset"
                   />
                   <!-- Portfolio Modal - Text-->
                   <p class="mb-5">
-                    EN İYİ SLEET VE ÇELİK UÇ TUTMASI İÇİN TASARLANAN ELMAS UÇ PORTEGÜLER <br>
-                    OTOKLAVA  VE SAYDEXE ATILABİLİR <br>
-                    ÜZERİNDEKİ BOYA AKMAZ VE LEKE YAPMAZ
+                    ÜRETİM YERİ TÜRKİYE <br />
+                    TÜM PENSETLERİMİZ A SINIFI TIBBİ PASLANMAZ ÇELİKTEN
+                    ÜRETİLMİŞTİR. <br />
+                    OLABİLDİĞİNCE İNCE UÇLU FAKAT İĞNE UÇLU DEĞİLDİR <br />
+                    KESKİN VE YUVARLAK KENARLI UÇLAR <br />
+                    KİŞİYE ÖZEL İSİM YAZDIRMA
                   </p>
                   <button class="btn btn-primary" data-dismiss="modal">
                     <i class="fas fa-times fa-fw"></i>
@@ -698,19 +808,21 @@
                     class="portfolio-modal-title text-secondary text-uppercase mb-0"
                     id="portfolioModal4Label"
                   >
-                    Çelik Konteyner
+                    Delikli Penset
                   </h2>
                   <!-- Icon Divider-->
                   <div class="divider-custom">
                     <div class="divider-custom-line"></div>
-                    <div class="divider-custom-icon"><i class="fas fa-sort-down"></i></div>
+                    <div class="divider-custom-icon">
+                      <i class="fas fa-sort-down"></i>
+                    </div>
                     <div class="divider-custom-line"></div>
                   </div>
                   <!-- Portfolio Modal - Image-->
                   <img
                     class="img-fluid rounded mb-5"
-                    src="assets/img/products/CelikKonteyner.jpeg"
-                    alt="celik-konteyner"
+                    src="assets/img/products/pensetler/delikli-penset.jpeg"
+                    alt="delikli-penset"
                   />
                   <!-- Portfolio Modal - Text-->
                   <p class="mb-5">
@@ -718,7 +830,7 @@
                   </p>
                   <button class="btn btn-primary" data-dismiss="modal">
                     <i class="fas fa-times fa-fw"></i>
-                    Pencereyi Kapatf
+                    Pencereyi Kapat
                   </button>
                 </div>
               </div>
@@ -727,6 +839,9 @@
         </div>
       </div>
     </div>
+    <!-- PENSETLER Bitiş -->
+
+    <!-- CERRAHİ EL ALETLERİ Başlangıç -->
     <!-- Portfolio Modal 5-->
     <div
       class="portfolio-modal modal fade"
@@ -755,25 +870,28 @@
                     class="portfolio-modal-title text-secondary text-uppercase mb-0"
                     id="portfolioModal5Label"
                   >
-                    Bilekli Ekim Penset
+                    ELMAS UÇ PORTEGÜ
                   </h2>
                   <!-- Icon Divider-->
                   <div class="divider-custom">
                     <div class="divider-custom-line"></div>
-                    <div class="divider-custom-icon"><i class="fas fa-sort-down"></i></div>
+                    <div class="divider-custom-icon">
+                      <i class="fas fa-sort-down"></i>
+                    </div>
                     <div class="divider-custom-line"></div>
                   </div>
                   <!-- Portfolio Modal - Image-->
                   <img
                     class="img-fluid rounded mb-5"
-                    src="assets/img/products/BilekliEkimPenset.jpeg"
-                    alt=""
+                    src="assets/img/products/cerrahi-el-aletleri/elmas-uc-portegu.jpeg"
+                    alt="elmas-uc-portegu"
                   />
                   <!-- Portfolio Modal - Text-->
                   <p class="mb-5">
-                    BİLEKLİKLER ALİMİNYUM VE CERRAHİ TEL İP OLARAK 2 MODELE AYRILIR <br>
-                    BİLEKLİKLERİN 6 AYLIK GARANTİSİ YAZILI BİR ŞEKİLDE BEYAAN EDİLİR <br>
-                    UZUN,KISA,SERT,VE HAFİF MODELLERİ MEVCUTTUR
+                    EN İYİ SLEET VE ÇELİK UÇ TUTMASI İÇİN TASARLANAN ELMAS UÇ
+                    PORTEGÜLER <br />
+                    OTOKLAVA VE SAYDEXE ATILABİLİR <br />
+                    ÜZERİNDEKİ BOYA AKMAZ VE LEKE YAPMAZ
                   </p>
                   <button class="btn btn-primary" data-dismiss="modal">
                     <i class="fas fa-times fa-fw"></i>
@@ -814,24 +932,24 @@
                     class="portfolio-modal-title text-secondary text-uppercase mb-0"
                     id="portfolioModal6Label"
                   >
-                    Delikli Ekim Penset
+                    CERRAHİ MAKAS
                   </h2>
                   <!-- Icon Divider-->
                   <div class="divider-custom">
                     <div class="divider-custom-line"></div>
-                    <div class="divider-custom-icon"><i class="fas fa-sort-down"></i></div>
+                    <div class="divider-custom-icon">
+                      <i class="fas fa-sort-down"></i>
+                    </div>
                     <div class="divider-custom-line"></div>
                   </div>
                   <!-- Portfolio Modal - Image-->
                   <img
                     class="img-fluid rounded mb-5"
-                    src="assets/img/products/DelikliPenset.jpeg"
-                    alt="delikli-penset"
+                    src="assets/img/products/cerrahi-el-aletleri/cerrahi-makas.jpeg"
+                    alt="cerrahi-makas"
                   />
                   <!-- Portfolio Modal - Text-->
-                  <p class="mb-5">
-                    <!-- açıklama kısmı -->
-                  </p>
+                  <p class="mb-5">ÜRETİM YERİ GERMANY</p>
                   <button class="btn btn-primary" data-dismiss="modal">
                     <i class="fas fa-times fa-fw"></i>
                     Pencereyi Kapat
@@ -843,6 +961,9 @@
         </div>
       </div>
     </div>
+    <!-- CERRAHİ EL ALETLERİ Bitiş -->
+
+    <!-- DERMOJET Başlangıç -->
     <!-- Portfolio Modal 7-->
     <div
       class="portfolio-modal modal fade"
@@ -871,27 +992,30 @@
                     class="portfolio-modal-title text-secondary text-uppercase mb-0"
                     id="portfolioModal6Label"
                   >
-                    Toplama Penset
+                    DERMOJET (İĞNESİZ ANESTEZİ CİHAZI)
                   </h2>
                   <!-- Icon Divider-->
                   <div class="divider-custom">
                     <div class="divider-custom-line"></div>
-                    <div class="divider-custom-icon"><i class="fas fa-sort-down"></i></div>
+                    <div class="divider-custom-icon">
+                      <i class="fas fa-sort-down"></i>
+                    </div>
                     <div class="divider-custom-line"></div>
                   </div>
                   <!-- Portfolio Modal - Image-->
                   <img
                     class="img-fluid rounded mb-5"
-                    src="assets/img/products/ToplamaPenset.jpeg"
-                    alt="toplama-penset"
+                    src="assets/img/products/dermojet/dermojet.jpeg"
+                    alt="dermojet"
                   />
                   <!-- Portfolio Modal - Text-->
                   <p class="mb-5">
-                    ÜRETİM YERİ : TÜRKİYE <br>
-                    NORMAL GÖVDE VE GENİŞ GÖVDELİ 2 MODELİMİZ BULUNUR <br>
-                    EXTRA OLARAK BİLEKLİK TAKILMAYA UYUMLU <br>
-                    PENSETLERİN UCUNDAKİ ÖZEL ÇİZGİLER İLE EN İYİ GREFT TUTMA KOLAYLIĞINI SAĞLIYOR <br>
-                    KIRILMAZ ÇELİKTEN İMAL EDİLMİŞTİR
+                    OTOKLAVA ATILABİLİR <br />
+                    BASINÇ AYARI <br />
+                    PASLANMAZ ÇELİK GÖVDE <br />
+                    KIRILMAZ POLİKARBON CAM <br />
+                    ÖZEL TASARIM GÖVDE <br />
+                    1 YIL YAZILI GARANTİ
                   </p>
                   <button class="btn btn-primary" data-dismiss="modal">
                     <i class="fas fa-times fa-fw"></i>
@@ -904,6 +1028,9 @@
         </div>
       </div>
     </div>
+    <!-- DERMOJET Bitiş -->
+
+    <!-- ÇELİK KONTEYNER Başlangıç -->
     <!-- Portfolio Modal 8-->
     <div
       class="portfolio-modal modal fade"
@@ -932,25 +1059,89 @@
                     class="portfolio-modal-title text-secondary text-uppercase mb-0"
                     id="portfolioModal6Label"
                   >
-                    Handle (Gümüş)
+                    Çelik Konteyner
                   </h2>
                   <!-- Icon Divider-->
                   <div class="divider-custom">
                     <div class="divider-custom-line"></div>
-                    <div class="divider-custom-icon"><i class="fas fa-sort-down"></i></div>
+                    <div class="divider-custom-icon">
+                      <i class="fas fa-sort-down"></i>
+                    </div>
                     <div class="divider-custom-line"></div>
                   </div>
                   <!-- Portfolio Modal - Image-->
                   <img
                     class="img-fluid rounded mb-5"
-                    src="assets/img/products/HandleGumus.jpeg"
-                    alt="handle-gumus"
+                    src="assets/img/products/celik-konteyner/celik-konteyner.jpeg"
+                    alt="celik-konteyner"
                   />
                   <!-- Portfolio Modal - Text-->
                   <p class="mb-5">
-                    ÜRETİM YERİ TÜRKİYE <br>
-                    OTOKLAVA ATILABLİR <br>
-                    KARARMA VE RENK SOLMASI OLMAZ <br>
+                    <!-- açıklama kısmı -->
+                  </p>
+                  <button class="btn btn-primary" data-dismiss="modal">
+                    <i class="fas fa-times fa-fw"></i>
+                    Pencereyi Kapat
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ÇELİK KONTEYNER Bitiş -->
+
+    <!-- HANDLE Başlangıç -->
+    <!-- Portfolio Modal 9-->
+    <div
+      class="portfolio-modal modal fade"
+      id="portfolioModal9"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="portfolioModal6Label"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-xl" role="document">
+        <div class="modal-content">
+          <button
+            class="close"
+            type="button"
+            data-dismiss="modal"
+            aria-label="Close"
+          >
+            <span aria-hidden="true"><i class="fas fa-times"></i></span>
+          </button>
+          <div class="modal-body text-center">
+            <div class="container">
+              <div class="row justify-content-center">
+                <div class="col-lg-8">
+                  <!-- Portfolio Modal - Title-->
+                  <h2
+                    class="portfolio-modal-title text-secondary text-uppercase mb-0"
+                    id="portfolioModal6Label"
+                  >
+                    HANDLE (GÜMÜŞ)
+                  </h2>
+                  <!-- Icon Divider-->
+                  <div class="divider-custom">
+                    <div class="divider-custom-line"></div>
+                    <div class="divider-custom-icon">
+                      <i class="fas fa-sort-down"></i>
+                    </div>
+                    <div class="divider-custom-line"></div>
+                  </div>
+                  <!-- Portfolio Modal - Image-->
+                  <img
+                    class="img-fluid rounded mb-5"
+                    src="assets/img/products/handle/handle.jpeg"
+                    alt="handle"
+                  />
+                  <!-- Portfolio Modal - Text-->
+                  <p class="mb-5">
+                    ÜRETİM YERİ TÜRKİYE <br />
+                    OTOKLAVA ATILABLİR <br />
+                    KARARMA VE RENK SOLMASI OLMAZ <br />
                     KÜÇÜK VE ORTA BOYLARI MEVCUTTUR
                   </p>
                   <button class="btn btn-primary" data-dismiss="modal">
@@ -964,66 +1155,9 @@
         </div>
       </div>
     </div>
-    <!-- Portfolio Modal 9-->
-    <div
-    class="portfolio-modal modal fade"
-    id="portfolioModal9"
-    tabindex="-1"
-    role="dialog"
-    aria-labelledby="portfolioModal6Label"
-    aria-hidden="true"
-  >
-    <div class="modal-dialog modal-xl" role="document">
-      <div class="modal-content">
-        <button
-          class="close"
-          type="button"
-          data-dismiss="modal"
-          aria-label="Close"
-        >
-          <span aria-hidden="true"><i class="fas fa-times"></i></span>
-        </button>
-        <div class="modal-body text-center">
-          <div class="container">
-            <div class="row justify-content-center">
-              <div class="col-lg-8">
-                <!-- Portfolio Modal - Title-->
-                <h2
-                  class="portfolio-modal-title text-secondary text-uppercase mb-0"
-                  id="portfolioModal6Label"
-                >
-                  Dermojet
-                </h2>
-                <!-- Icon Divider-->
-                <div class="divider-custom">
-                  <div class="divider-custom-line"></div>
-                  <div class="divider-custom-icon"><i class="fas fa-sort-down"></i></div>
-                  <div class="divider-custom-line"></div>
-                </div>
-                <!-- Portfolio Modal - Image-->
-                <img
-                  class="img-fluid rounded mb-5"
-                  src="assets/img/products/Dermojet.jpeg"
-                  alt="dermojet"
-                />
-                <!-- Portfolio Modal - Text-->
-                <p class="mb-5">
-                  <!-- açıklama kısmı -->
-                </p>
-                <button class="btn btn-primary" data-dismiss="modal">
-                  <i class="fas fa-times fa-fw"></i>
-                  Pencereyi Kapat
-                </button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
+    <!-- HANDLE Bitiş -->
 
     <!-- yeni eklenecekler buraya -->
-
 
     <!-- Whatsapp İkonu -->
     <a
@@ -1040,7 +1174,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
     <!-- Core theme JS-->
     <script src="js/scripts.js"></script>
-        <!-- Font Awesome icons (free version)-->
+    <!-- Font Awesome icons (free version)-->
     <script
       src="https://use.fontawesome.com/releases/v5.13.0/js/all.js"
       crossorigin="anonymous"
